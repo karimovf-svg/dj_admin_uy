@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kurslar</title>
+</head>
+<body>
+    <h1>Kurslar ro'yxati</h1>
+    <ul>
+        {% for item in kurs %}
+            <li>{{ item.title }} - {{ item.start_time }} - {{ iyem.end_time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
